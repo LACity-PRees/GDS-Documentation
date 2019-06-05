@@ -18,7 +18,6 @@ function readRows() {
 
   for (var i = 0; i <= numRows - 1; i++) {
     var row = values[i];
-    Logger.log(row);
   }
 };
 
