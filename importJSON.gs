@@ -5,8 +5,12 @@
  * https://developers.google.com/apps-script/service_spreadsheet
  */
 function readRows() {
-  var doc = SpreadsheetApp.openByUrl("https://docs.google.com/spreadsheets/d/14C3BW25lJf6Sm6WsU4WBZKcwi3cMnTIlujJPgZciBpM/edit#gid=0");
-  var sheet = doc.getSheetByName("Sheet1");
+  
+  var spreadsheetURL = [URL TO SPREADSHEET];
+  var sheetName = [SPREADSHEET SHEET NAME];
+  
+  var doc = SpreadsheetApp.openByUrl(spreadsheetURL);
+  var sheet = doc.getSheetByName(sheetName);
 //  var sheet = doc.getActiveSheet();
   var rows = sheet.getDataRange();
   var numRows = rows.getNumRows();
